@@ -1,6 +1,6 @@
-local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
+local DarkraiX = loadstring(game:HttpGet("https://github.com/Fe773Vdoa/Hub/raw/main/Hub", true))()
 
-local Library = DarkraiX:Window("YT Tutorial","","",Enum.KeyCode.RightControl);
+local Library = DarkraiX:Window("Test","","",Enum.KeyCode.RightControl);
 
 Tab1 = Library:Tab("Tab")
 
@@ -8,5 +8,26 @@ Tab1:Button("A Button",function()
     print("hi")
 end)
 
+Tab1:Dropdown("Dropdown",{"yo","sus","pro"},function(value)
+            print(value)
+end)
+
+Tab1:Textbox("Textbox","",true,function(value)
+print(value)
+end)
+
+Tab1:Seperator("Seperator")
+
+Tab1:Line()
+
+Tab1:Toggle("Toggle",false,function(value)
+print(value)
+    end)
+
+Tab1:Slider("Slider",1,100,25,function(value)
+        print(value)
+    end)
+
 --[[
+DarkraiX:ToggleUi()
 ]]
