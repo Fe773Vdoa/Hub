@@ -459,7 +459,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 
 			Circle.Name = "Circle"
 			Circle.Parent = ToggleImage
-			Circle.BackgroundColor3 = Color3.fromRGB(227, 60, 60)
+			Circle.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 			Circle.Position = UDim2.new(0, 2, 0, 2)
 			Circle.Size = UDim2.new(0, 16, 0, 16)
 
@@ -481,7 +481,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 					TweenService:Create(
 						Circle,
 						TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(5, 255, 10)}
+						{BackgroundColor3 = Color3.fromRGB(255, 0, 0)}
 					):Play()
 				end
 				pcall(callback,toggled)
@@ -493,7 +493,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 				TweenService:Create(
 					Circle,
 					TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-					{BackgroundColor3 = _G.Color}
+					{BackgroundColor3 = Color3.fromRGB(5, 255, 10)}
 				):Play()
 				pcall(callback,toggled)
 			end
@@ -511,7 +511,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			
 			Dropdown.Name = "Dropdown"
 			Dropdown.Parent = MainFramePage
-			Dropdown.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			Dropdown.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 			Dropdown.ClipsDescendants = true
 			Dropdown.Size = UDim2.new(0, 470, 0, 31)
 			
