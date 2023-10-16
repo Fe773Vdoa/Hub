@@ -762,7 +762,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 
 			bar.Name = "bar"
 			bar.Parent = AHEHE
-			bar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			bar.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 			bar.Size = UDim2.new(0, 448, 0, 5)
 
 			bar1.Name = "bar1"
