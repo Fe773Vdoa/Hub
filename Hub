@@ -9,7 +9,7 @@ local PlaceName = game:GetService("MarketplaceService"):GetProductInfo(game.Plac
     wait(1)
 
 do local GUI = game.CoreGui:FindFirstChild("Darkrai");if GUI then GUI:Destroy();end;if _G.Color == nil then
-       _G.Color = Color3.fromRGB(255, 5, 5)
+       _G.Color = Color3.fromRGB(255, 117, 5)
    end 
 end
 
@@ -113,7 +113,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	local Top = Instance.new("Frame")
 	Top.Name = "Top"
 	Top.Parent = Main
-	Top.BackgroundColor3 = Color3.fromRGB(230, 18, 18)
+	Top.BackgroundColor3 = Color3.fromRGB(230, 113, 18)
 	Top.Size = UDim2.new(0, 656, 0, 27)
 
 	local TCNR = Instance.new("UICorner")
