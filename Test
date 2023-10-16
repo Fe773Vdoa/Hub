@@ -20,7 +20,7 @@ Tab1:Seperator("Seperator")
 
 Tab1:Line()
 
-Tab1:Toggle("Toggle",false,function(value)
+Tab1:Toggle("Toggle",true,function(value)
 local plr = game.Players.LocalPlayer
 local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
 if plrRP then
