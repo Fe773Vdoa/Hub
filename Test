@@ -1,4 +1,4 @@
-local DarkraiX = loadstring(game:HttpGet("https://github.com/Fe773Vdoa/Hub/raw/main/HubLaranja", true))()
+local DarkraiX = loadstring(game:HttpGet("https://github.com/Fe773Vdoa/Hub/raw/main/HubAmarela", true))()
 
 local Library = DarkraiX:Window("Test","","",Enum.KeyCode.RightControl);
 
