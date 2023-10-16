@@ -473,7 +473,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 					TweenService:Create(
 						Circle,
 						TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-						{BackgroundColor3 = _G.Color}
+						{BackgroundColor3 = Color3.fromRGB(5, 255, 10)}
 					):Play()
 				else
 					toggled = false
