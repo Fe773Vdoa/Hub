@@ -20,7 +20,7 @@ Tab1:Seperator("Seperator")
 
 Tab1:Line()
 
-Tab1:Toggle("Toggle",true,function(value)
+Tab1:Toggle("Toggle",false,function(value)
 repeat task.wait()
 game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer()
 until 1 + 1 == 11
