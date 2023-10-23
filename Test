@@ -21,19 +21,10 @@ Tab1:Seperator("Seperator")
 Tab1:Line()
 
 Tab1:Toggle("Toggle",true,function(value)
-local plr = game.Players.LocalPlayer
-local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
-if plrRP then
-  TweenSpeed = 200
-  TweenPos = CFrame.new(-870.7681884765625, 193.59991455078125, -23.780122756958008)
-  -- ///////////////////////////// --
-  local distance = (plrRP.Position - TweenPos.p).Magnitude
-  local duration = distance / TweenSpeed
-  local tween = game:GetService("TweenService"):Create(plrRP, TweenInfo.new(duration), {CFrame = TweenPos})
-  tween:Play()
-  tween.Completed:Wait()
-end
-    end)
+repeat task.wait()
+game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer()
+until 1 + 1 == 11
+end)
 
 Tab1:Slider("Slider",1,100,25,function(value)
         print(value)
