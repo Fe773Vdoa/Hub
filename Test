@@ -26,8 +26,11 @@ game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer
 until 1 + 1 == 11
 end)
 
-Tab1:Slider("Slider",1,100,25,function(value)
-        print(value)
+Tab1:Slider("Slider",1,100,16,function(value)
+        local player = game.Players.LocalPlayer
+local humanoid = player.Character.Humanoid
+
+humanoid.WalkSpeed = print(value)
     end)
 
 --[[
