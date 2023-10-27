@@ -21,9 +21,18 @@ Tab1:Seperator("Seperator")
 Tab1:Line()
 
 Tab1:Toggle("Toggle",false,function(value)
-repeat task.wait()
-game:GetService("ReplicatedStorage"):WaitForChild("SpawnGalaxyBlock"):FireServer()
-until 1 + 1 == 11
+local function setBrightness()
+    
+    local lighting = game:GetService("Lighting")
+    
+    
+    lighting.Ambient = Color3.new(1, 1, 1)
+    
+    
+    lighting.OutdoorAmbient = Color3.new(1, 1, 1)
+end
+
+setBrightness()
 end)
 
 Tab1:Slider("Slider",1,100,16,function(value)
