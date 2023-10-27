@@ -30,7 +30,7 @@ Tab1:Slider("Slider",1,100,16,function(value)
         local player = game.Players.LocalPlayer
 local humanoid = player.Character.Humanoid
 
-humanoid.WalkSpeed = print(value)
+humanoid.WalkSpeed = value
     end)
 
 --[[
