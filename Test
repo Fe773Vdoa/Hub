@@ -42,6 +42,8 @@ local humanoid = player.Character.Humanoid
 humanoid.WalkSpeed = value
     end)
 
+Tab1:Label("Bem Vindo player.Name")
+
 --[[
 DarkraiX:ToggleUi()
 ]]
