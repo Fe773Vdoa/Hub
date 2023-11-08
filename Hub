@@ -1,3 +1,7 @@
+local Configs_HUB = {
+  Text_Font = Enum.Font.FredokaOne
+}
+
 local PlaceName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
 
     if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
@@ -136,7 +140,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Name.BackgroundTransparency = 1.000
 	Name.Position = UDim2.new(0.0609756112, 0, 0, 0)
 	Name.Size = UDim2.new(0, 61, 0, 27)
-	Name.Font = Enum.Font.GothamSemibold
+	Name.Font = Configs_HUB.Text_Font
 	Name.Text = hubname
 	Name.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Name.TextSize = 17.000
@@ -148,8 +152,8 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Hub.BackgroundTransparency = 1.000
 	Hub.Position = UDim2.new(0, 110, 0, 0)
 	Hub.Size = UDim2.new(0, 81, 0, 27)
-	Hub.Font = Enum.Font.GothamSemibold
-	Hub.Text = "  | "..gamename
+	Hub.Font = Configs_HUB.Text_Font
+	Hub.Text = "  : "..gamename
 	Hub.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Hub.TextSize = 17.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
@@ -161,7 +165,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	BindButton.BackgroundTransparency = 1.000
 	BindButton.Position = UDim2.new(0.847561002, 0, 0, 0)
 	BindButton.Size = UDim2.new(0, 100, 0, 27)
-	BindButton.Font = Enum.Font.GothamSemibold
+	BindButton.Font = Configs_HUB.Text_Font
 	BindButton.Text = "[RightControl]"
 	BindButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 	BindButton.TextSize = 13.000
@@ -260,7 +264,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	    TabButton.BorderColor3 = _G.Color
         TabButton.BorderSizePixel = 3
 		TabButton.Size = UDim2.new(0, 130, 0, 23)
-		TabButton.Font = Enum.Font.GothamSemibold
+		TabButton.Font = Configs_HUB.Text_Font
 		TabButton.TextColor3 = Color3.fromRGB(225, 225, 225)
 		TabButton.TextSize = 15.000
 		TabButton.TextTransparency = 0.500
@@ -359,7 +363,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			TextBtn.Position = UDim2.new(0, 1, 0, 1)
 			TextBtn.Size = UDim2.new(0, 468, 0, 29)
 			TextBtn.AutoButtonColor = false
-			TextBtn.Font = Enum.Font.GothamSemibold
+			TextBtn.Font = Configs_HUB.Text_Font
 			TextBtn.Text = text
 			TextBtn.TextColor3 = Color3.fromRGB(225, 225, 225)
 			TextBtn.TextSize = 15.000
@@ -429,7 +433,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			Button.Position = UDim2.new(0, 1, 0, 1)
 			Button.Size = UDim2.new(0, 468, 0, 29)
 			Button.AutoButtonColor = false
-			Button.Font = Enum.Font.SourceSans
+			Button.Font = Configs_HUB.Text_Font
 			Button.Text = ""
 			Button.TextColor3 = Color3.fromRGB(255, 255, 255)
 			Button.TextSize = 11.000
@@ -443,7 +447,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			Label.BackgroundTransparency = 1.000
 			Label.Position = UDim2.new(0, 1, 0, 1)
 			Label.Size = UDim2.new(0, 468, 0, 29)
-			Label.Font = Enum.Font.GothamSemibold
+			Label.Font = Configs_HUB.Text_Font
 			Label.Text = text
 			Label.TextColor3 = Color3.fromRGB(225, 225, 225)
 			Label.TextSize = 15.000
@@ -523,7 +527,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			DropTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			DropTitle.BackgroundTransparency = 1.000
 			DropTitle.Size = UDim2.new(0, 470, 0, 31)
-			DropTitle.Font = Enum.Font.GothamSemibold
+			DropTitle.Font = Configs_HUB.Text_Font
 			DropTitle.Text = text.. " : "
 			DropTitle.TextColor3 = Color3.fromRGB(225, 225, 225)
 			DropTitle.TextSize = 15.000
@@ -561,7 +565,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			DropButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			DropButton.BackgroundTransparency = 1.000
 			DropButton.Size = UDim2.new(0, 470, 0, 31)
-			DropButton.Font = Enum.Font.SourceSans
+			DropButton.Font = Configs_HUB.Text_Font
 			DropButton.Text = ""
 			DropButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 			DropButton.TextSize = 14.000
@@ -574,7 +578,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 				Item.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Item.BackgroundTransparency = 1.000
 				Item.Size = UDim2.new(0, 460, 0, 26)
-				Item.Font = Enum.Font.GothamSemibold
+				Item.Font = Configs_HUB.Text_Font
 				Item.Text = tostring(v)
 				Item.TextColor3 = Color3.fromRGB(225, 225, 225)
 				Item.TextSize = 13.000
@@ -639,7 +643,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 				Item.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Item.BackgroundTransparency = 1.000
 				Item.Size = UDim2.new(0, 470, 0, 26)
-				Item.Font = Enum.Font.GothamSemibold
+				Item.Font = Configs_HUB.Text_Font
 				Item.Text = tostring(t)
 				Item.TextColor3 = Color3.fromRGB(225, 225, 225)
 				Item.TextSize = 13.000
@@ -736,7 +740,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			SliderLabel.BackgroundTransparency = 1.000
 			SliderLabel.Position = UDim2.new(0, 15, 0, 0)
 			SliderLabel.Size = UDim2.new(0, 180, 0, 26)
-			SliderLabel.Font = Enum.Font.GothamSemibold
+			SliderLabel.Font = Configs_HUB.Text_Font
 			SliderLabel.Text = text
 			SliderLabel.TextColor3 = Color3.fromRGB(225, 225, 225)
 			SliderLabel.TextSize = 16.000
@@ -803,7 +807,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 			TextBox.Position = UDim2.new(0, 1, 0, 1)
 			TextBox.Size = UDim2.new(0, 63, 0, 16)
-			TextBox.Font = Enum.Font.GothamSemibold
+			TextBox.Font = Configs_HUB.Text_Font
 			TextBox.TextColor3 = Color3.fromRGB(225, 225, 225)
 			TextBox.TextSize = 9.000
 			TextBox.Text = set
@@ -906,7 +910,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			TextboxLabel.Position = UDim2.new(0, 15, 0, 0)
 			TextboxLabel.Text = text
 			TextboxLabel.Size = UDim2.new(0, 145, 0, 31)
-			TextboxLabel.Font = Enum.Font.GothamSemibold
+			TextboxLabel.Font = Configs_HUB.Text_Font
 			TextboxLabel.TextColor3 = Color3.fromRGB(225, 225, 225)
 			TextboxLabel.TextSize = 16.000
 			TextboxLabel.TextTransparency = 0
@@ -918,7 +922,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			txtbtn.BackgroundTransparency = 1.000
 			txtbtn.Position = UDim2.new(0, 1, 0, 1)
 			txtbtn.Size = UDim2.new(0, 468, 0, 29)
-			txtbtn.Font = Enum.Font.SourceSans
+			txtbtn.Font = Configs_HUB.Text_Font
 			txtbtn.Text = ""
 			txtbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 			txtbtn.TextSize = 14.000
@@ -929,7 +933,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			RealTextbox.BackgroundTransparency = 0
 			RealTextbox.Position = UDim2.new(0, 360, 0, 4)
 			RealTextbox.Size = UDim2.new(0, 100, 0, 24)
-			RealTextbox.Font = Enum.Font.GothamSemibold
+			RealTextbox.Font = Configs_HUB.Text_Font
 			RealTextbox.Text = ""
 			RealTextbox.TextColor3 = Color3.fromRGB(225, 225, 225)
 			RealTextbox.TextSize = 11.000
@@ -955,7 +959,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			Label.BackgroundTransparency = 1.000
 			Label.Size = UDim2.new(0, 470, 0, 20)
-			Label.Font = Enum.Font.GothamSemibold
+			Label.Font = Configs_HUB.Text_Font
 			Label.TextColor3 = Color3.fromRGB(225, 225, 225)
 			Label.TextSize = 16.000
 			Label.Text = text
@@ -996,7 +1000,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 			Sep2.BackgroundTransparency = 1.000
 			Sep2.Position = UDim2.new(0, 185, 0, 0)
 			Sep2.Size = UDim2.new(0, 100, 0, 20)
-			Sep2.Font = Enum.Font.GothamSemibold
+			Sep2.Font = Configs_HUB.Text_Font
 			Sep2.Text = text
 			Sep2.TextColor3 = Color3.fromRGB(255, 255, 255)
 			Sep2.TextSize = 14.000
