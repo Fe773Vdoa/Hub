@@ -153,7 +153,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Hub.Position = UDim2.new(0, 110, 0, 0)
 	Hub.Size = UDim2.new(0, 81, 0, 27)
 	Hub.Font = Configs_HUB.Text_Font
-	Hub.Text = "  : "..gamename
+	Hub.Text = "  :  "..gamename
 	Hub.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Hub.TextSize = 17.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
