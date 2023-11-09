@@ -21,8 +21,9 @@ Tab1:Seperator("Seperator")
 Tab1:Line()
 
 Tab1:Toggle("Toggle",false,function(toggle)
-if toggle == "true" then
- local function setBrightness()
+ if toggle == "true" then
+
+local function setBrightness()
     
     local lighting = game:GetService("Lighting")
     
@@ -33,6 +34,7 @@ if toggle == "true" then
     lighting.OutdoorAmbient = Color3.new(1, 1, 1)
 
   elseif toggle == "false" then
+
  local function resetBrightness()
     local lighting = game:GetService("Lighting")
     
@@ -41,8 +43,8 @@ if toggle == "true" then
 end
 
 resetBrightness()
-   end
   end
+ end
 end
 
 setBrightness()
