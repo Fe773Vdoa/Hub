@@ -1,6 +1,6 @@
 local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/Fe773Vdoa/Hub/main/Hub", true))()
 
-local Library = DarkraiX:Window("Test","","",Enum.KeyCode.RightControl);
+local Library = DarkraiX:Window("Test","","rbxassetid://15305029951",Enum.KeyCode.RightControl);
 
 Tab1 = Library:Tab("Tab")
 
