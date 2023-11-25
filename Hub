@@ -1,5 +1,6 @@
 local Configs_HUB = {
-  Text_Font = Enum.Font.FredokaOne
+  Text_Font = Enum.Font.FredokaOne,
+  KeyBind = LeftShift
 }
 
 local PlaceName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
@@ -88,7 +89,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	local abc = false
 	local logo = logo or 0
 	local currentpage = ""
-	local keybind = keybind or Enum.KeyCode.RightControl
+	local keybind = keybind or Enum.KeyCode.Configs_HUB.KeyBind
 	local yoo = string.gsub(tostring(keybind),"Enum.KeyCode.","")
 	if gamename == "" then 
 	    gamename = ""..PlaceName.Name
@@ -166,7 +167,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	BindButton.Position = UDim2.new(0.847561002, 0, 0, 0)
 	BindButton.Size = UDim2.new(0, 100, 0, 27)
 	BindButton.Font = Configs_HUB.Text_Font
-	BindButton.Text = "[RightControl]"
+	BindButton.Text = "[Configs_HUB.KeyBind]"
 	BindButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 	BindButton.TextSize = 13.000
 
